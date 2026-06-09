@@ -309,7 +309,7 @@
 /* batas */
 
 
-     /* ─── PEMBAHASAN ─── */
+     /* ─── pendahuluan ─── */
     #pendahuluan {
       padding: 100px 2rem;
       background-color: var(--cream-dark);
@@ -355,7 +355,8 @@
       display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;
     }
     .ayat-badge {
-      background: linear-gradient(135deg, var(--gold), #A87830);
+      background: transparent;
+      border: 1px solid #A87830;
       color: white;
       font-size: 0.7rem;
       padding: 0.3rem 0.8rem;
