@@ -354,10 +354,10 @@
     .ayat-header {
       display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;
     }
-    .ayat-badge {
+    .ayat-badge-1 {
       background: transparent;
       border: 1px solid #A87830;
-      color: white;
+      color: var(--gold);
       font-size: 0.7rem;
       padding: 0.3rem 0.8rem;
       border-radius: 20px;
