@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nilai-Nilai Pendidikan Dalam QS. Luqman 31:12-19</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;600;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --gold: #C8973A;
+      --gold-light: #E8C27A;
+      --gold-pale: #F5E6C8;
+      --green-deep: #1A3A2A;
+      --green-mid: #2D5A3D;
+      --green-light: #3D7A50;
+      --cream: #FAF6EE;
+      --cream-dark: #F0E8D6;
+      --text-dark: #1C1A14;
+      --text-mid: #4A4030;
+      --text-light: #7A6A50;
+      --white: #FFFFFF;
+      --shadow: 0 8px 40px rgba(26,58,42,0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ─── ARABESQUE PATTERN ─── */
+    .arabesque-bg {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none; z-index: 0; opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231A3A2A' fill-opacity='1'%3E%3Cpath d='M40 0C17.9 0 0 17.9 0 40s17.9 40 40 40 40-17.9 40-40S62.1 0 40 0zm0 72C22.3 72 8 57.7 8 40S22.3 8 40 8s32 14.3 32 32-14.3 32-32 32zm0-56C26.7 16 16 26.7 16 40s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 40c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(26,58,42,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200,151,58,0.3);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .nav-brand {
+      font-family: 'Amiri', serif;
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+    .nav-brand span { display: block; font-size: 0.7rem; color: rgba(200,151,58,0.6); font-family: 'Source Serif 4', serif; font-weight: 300; }
+
+    .nav-links {
+      display: flex; gap: 0.3rem; list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: 'Source Serif 4', serif;
+      padding: 0.45rem 0.9rem;
+      border-radius: 4px;
+      transition: all 0.25s;
+      letter-spacing: 0.03em;
+    }
+    .nav-links a:hover {
+      color: var(--gold-light);
+      background: rgba(200,151,58,0.12);
+    }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--gold-light); border-radius: 2px; transition: 0.3s; }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--green-deep) 0%, #0F2A1C 50%, #0A1F15 100%);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 2rem 60px;
+    }
+
+    .hero-ornament {
+      position: absolute;
+      border: 1px solid rgba(200,151,58,0.15);
+      border-radius: 50%;
+    }
+    .hero-ornament:nth-child(1) { width: 600px; height: 600px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+    .hero-ornament:nth-child(2) { width: 800px; height: 800px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+    .hero-ornament:nth-child(3) { width: 1000px; height: 1000px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation: rotateOrn 30s linear infinite; }
+
+    @keyframes rotateOrn {
+      from { transform: translate(-50%,-50%) rotate(0deg); }
+      to { transform: translate(-50%,-50%) rotate(360deg); }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 860px; }
+
+    .hero-badge {
+      display: inline-block;
+      border: 1px solid rgba(200,151,58,0.5);
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.2rem;
+      border-radius: 2px;
+      margin-bottom: 2rem;
+      font-family: 'Source Serif 4', serif;
+      animation: fadeInDown 0.8s ease both;
+    }
+
+    .hero-arabic {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--gold-light);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 20px rgba(200,151,58,0.3);
+      animation: fadeInDown 0.9s 0.1s ease both;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s 0.2s ease both;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.55);
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      animation: fadeInDown 1s 0.3s ease both;
+    }
+
+    .hero-divider {
+      display: flex; align-items: center; justify-content: center; gap: 1rem;
+      margin-bottom: 2.5rem;
+      animation: fadeInDown 1s 0.4s ease both;
+    }
+    .hero-divider::before, .hero-divider::after {
+      content: ''; flex: 1; max-width: 120px;
+      height: 1px; background: linear-gradient(90deg, transparent, rgba(200,151,58,0.5));
+    }
+    .hero-divider::after { background: linear-gradient(90deg, rgba(200,151,58,0.5), transparent); }
+    .hero-divider span { color: var(--gold); font-size: 1.4rem; }
+
+    .hero-cta {
+      display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+      animation: fadeInUp 1s 0.5s ease both;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #A87830);
+      color: var(--white);
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(200,151,58,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200,151,58,0.4); }
+    .btn-outline {
+      border: 1px solid rgba(200,151,58,0.5);
+      color: var(--gold-light);
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      transition: all 0.3s;
+    }
+    .btn-outline:hover { background: rgba(200,151,58,0.1); transform: translateY(-2px); }
+
+    @keyframes fadeInDown { from { opacity:0; transform: translateY(-20px); } to { opacity:1; transform: translateY(0); } }
+    @keyframes fadeInUp   { from { opacity:0; transform: translateY(20px);  } to { opacity:1; transform: translateY(0); } }
+    @keyframes fadeIn     { from { opacity:0; } to { opacity:1; } }
+
+    /* ─── SECTIONS COMMON ─── */
+    section { position: relative; z-index: 1; }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .section-label {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-family: 'Source Serif 4', serif;
+      margin-bottom: 0.8rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--green-deep);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+    .section-title.light { color: var(--white); }
+    .section-desc {
+      font-size: 1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .section-desc.light { color: rgba(255,255,255,0.65); }
+
+    .gold-line {
+      display: flex; align-items: center; justify-content: center; gap: 0.8rem; margin: 1.2rem auto 0;
+    }
+    .gold-line::before, .gold-line::after {
+      content: ''; width: 50px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold));
+    }
+    .gold-line::after { background: linear-gradient(90deg, var(--gold), transparent); }
+    .gold-line span { color: var(--gold); font-size: 0.9rem; }
+
+    /* ─── PEMBAHASAN ─── */
+    #pembahasan {
+      padding: 100px 2rem;
+      background: var(--cream);
+    }
+
+    .pembahasan-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .ayat-card {
+      background: var(--green-deep);
+      border-radius: 12px;
+      padding: 2.5rem;
+      position: sticky; top: 90px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .ayat-card::before {
+      content: '';
+      position: absolute; top: -30px; right: -30px;
+      width: 150px; height: 150px;
+      border: 1px solid rgba(200,151,58,0.2);
+      border-radius: 50%;
+    }
+
+    .ayat-header {
+      display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;
+    }
+    .ayat-badge {
+      background: linear-gradient(135deg, var(--gold), #A87830);
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-family: 'Source Serif 4', serif;
+      letter-spacing: 0.1em;
+    }
+    .ayat-ref { color: rgba(200,151,58,0.7); font-size: 0.8rem; }
+
+    .arabic-text {
+      font-family: 'Amiri', serif;
+      font-size: 1.6rem;
+      color: var(--gold-light);
+      text-align: right;
+      line-height: 2.2;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(200,151,58,0.2);
+    }
+
+    .translation {
+      font-style: italic;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.8;
+      font-size: 0.92rem;
+    }
+    .translation strong { color: var(--gold-light); font-style: normal; }
+
+    .pembahasan-content { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .pembahasan-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.8rem;
+      border-left: 3px solid var(--gold);
+      box-shadow: 0 2px 16px rgba(26,58,42,0.07);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .pembahasan-card:hover { transform: translateX(4px); box-shadow: 0 4px 24px rgba(26,58,42,0.12); }
+
+    .card-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green-deep);
+      margin-bottom: 0.7rem;
+    }
+    .card-text { color: var(--text-mid); line-height: 1.8; font-size: 0.9rem; }
+
+    /* ─── NILAI-NILAI ─── */
+    #nilai {
+      padding: 100px 2rem;
+      background: linear-gradient(180deg, var(--green-deep) 0%, #0A1F15 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #nilai::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .nilai-container { max-width: 1100px; margin: 0 auto; }
+
+    .nilai-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .nilai-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(200,151,58,0.2);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.35s;
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+    }
+    .nilai-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(200,151,58,0.08) 0%, transparent 60%);
+      opacity: 0; transition: opacity 0.35s;
+    }
+    .nilai-card:hover { border-color: rgba(200,151,58,0.5); transform: translateY(-4px); }
+    .nilai-card:hover::before { opacity: 1; }
+
+    .nilai-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,151,58,0.12);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .nilai-icon { font-size: 2rem; margin-bottom: 1rem; }
+
+    .nilai-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .nilai-arabic {
+      font-family: 'Amiri', serif;
+      font-size: 1.2rem;
+      color: rgba(200,151,58,0.6);
+      margin-bottom: 0.8rem;
+      text-align: right;
+    }
+
+    .nilai-ayat {
+      display: inline-block;
+      background: rgba(200,151,58,0.15);
+      color: var(--gold);
+      font-size: 0.7rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.08em;
+    }
+
+    .nilai-desc {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.88rem;
+      line-height: 1.8;
+    }
+
+    /* ─── IMPLEMENTASI ─── */
+    #implementasi {
+      padding: 100px 2rem;
+      background: var(--cream-dark);
+    }
+
+    .impl-container { max-width: 1100px; margin: 0 auto; }
+
+    .impl-tabs {
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+    }
+    .impl-tab {
+      padding: 0.6rem 1.4rem;
+      border: 1px solid rgba(26,58,42,0.2);
+      border-radius: 4px;
+      background: transparent;
+      cursor: pointer;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      transition: all 0.25s;
+    }
+    .impl-tab.active, .impl-tab:hover {
+      background: var(--green-deep);
+      color: var(--gold-light);
+      border-color: var(--green-deep);
+    }
+
+    .impl-panel { display: none; animation: fadeIn 0.4s ease; }
+    .impl-panel.active { display: block; }
+
+    .impl-panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .impl-item {
+      background: white;
+      border-radius: 10px;
+      padding: 1.8rem;
+      box-shadow: 0 2px 12px rgba(26,58,42,0.06);
+      display: flex; gap: 1rem; align-items: flex-start;
+      transition: all 0.3s;
+    }
+    .impl-item:hover { box-shadow: 0 6px 24px rgba(26,58,42,0.12); transform: translateY(-3px); }
+
+    .impl-num {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--green-deep), var(--green-mid));
+      color: var(--gold-light);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .impl-text h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--green-deep);
+      margin-bottom: 0.5rem;
+    }
+    .impl-text p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.7; }
+
+    /* ─── KESIMPULAN ─── */
+    #kesimpulan {
+      padding: 100px 2rem;
+      background: white;
+    }
+
+    .kesimpulan-container { max-width: 860px; margin: 0 auto; }
+
+    .quote-block {
+      background: linear-gradient(135deg, var(--green-deep), #0F2A1C);
+      border-radius: 16px;
+      padding: 3rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .quote-block::before {
+      content: '❝';
+      position: absolute; top: -10px; left: 20px;
+      font-size: 8rem;
+      color: rgba(200,151,58,0.08);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .quote-text {
+      font-family: 'Amiri', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      line-height: 2;
+      margin-bottom: 1rem;
+      position: relative; z-index: 1;
+    }
+    .quote-source {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .kesimpulan-points {
+      display: flex; flex-direction: column; gap: 1rem;
+    }
+
+    .point-item {
+      display: flex; gap: 1rem; align-items: flex-start;
+      padding: 1.2rem 1.5rem;
+      border-radius: 8px;
+      background: var(--cream);
+      border-left: 3px solid var(--gold);
+      transition: all 0.3s;
+    }
+    .point-item:hover { background: var(--cream-dark); transform: translateX(4px); }
+
+    .point-dot {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, var(--gold), #A87830);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .point-text { color: var(--text-mid); line-height: 1.7; font-size: 0.9rem; }
+    .point-text strong { color: var(--green-deep); font-family: 'Playfair Display', serif; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--green-deep);
+      padding: 60px 2rem 30px;
+      border-top: 1px solid rgba(200,151,58,0.2);
+    }
+
+    .footer-top {
+      max-width: 1100px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(200,151,58,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .footer-brand h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold-light);
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .footer-brand p { color: rgba(255,255,255,0.5); font-size: 0.85rem; line-height: 1.8; }
+
+    .footer-col h4 {
+      color: var(--gold);
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 0.5rem; }
+    .footer-col ul li a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.25s;
+    }
+    .footer-col ul li a:hover { color: var(--gold-light); }
+
+    .footer-bottom {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom p { color: rgba(255,255,255,0.3); font-size: 0.8rem; }
+    .footer-arabic {
+      font-family: 'Amiri', serif;
+      color: rgba(200,151,58,0.4);
+      font-size: 1rem;
+    }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── PROGRESS BAR ─── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; z-index: 9999;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      width: 0; transition: width 0.1s;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: var(--green-deep); padding: 1rem; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .pembahasan-grid { grid-template-columns: 1fr; }
+      .ayat-card { position: static; }
+      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .impl-tabs { flex-direction: column; align-items: stretch; }
+      .impl-tab { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div class="arabesque-bg"></div>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<nav>
+  <div class="nav-brand">
+    QS. Luqman 31:12-19
+    <span>Nilai Pendidikan &amp; Pembentukan Karakter</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#pembahasan">Pembahasan</a></li>
+    <li><a href="#nilai">Nilai-Nilai</a></li>
+    <li><a href="#implementasi">Implementasi</a></li>
+    <li><a href="#kesimpulan">Kesimpulan</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="hero-ornament"></div>
+  <div class="hero-ornament"></div>
+  <div class="hero-ornament"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Kajian Tafsir Tarbawi</div>
+
+    <div class="hero-arabic">
+      وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ
+    </div>
+
+    <h1 class="hero-title">
+      Nilai-Nilai Pendidikan Dalam<br/>
+      QS. Luqman 31:12-19<br/>
+      <em style="font-weight:400; font-size:0.8em;">Sebagai Landasan Pembentukan Karakter Anak Didik</em>
+    </h1>
+
+    <p class="hero-subtitle">Meneladani Hikmah Luqman Al-Hakim dalam Mendidik Generasi Berkarakter</p>
+
+    <div class="hero-divider"><span>✦</span></div>
+
+    <div class="hero-cta">
+      <a href="#pembahasan" class="btn-primary">Mulai Membaca</a>
+      <a href="#nilai" class="btn-outline">Lihat Nilai-Nilai</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PEMBAHASAN ═══════════ -->
+<section id="pembahasan">
+  <div style="max-width:1100px; margin:0 auto;">
+    <div class="section-header reveal">
+      <span class="section-label">✦ Tinjauan Umum</span>
+      <h2 class="section-title">Pembahasan</h2>
+      <p class="section-desc">Memahami konteks dan makna mendalam dari nasihat Luqman kepada putranya dalam Al-Qur'an</p>
+      <div class="gold-line"><span>◆</span></div>
+    </div>
+
+    <div class="pembahasan-grid">
+      <!-- Ayat Card -->
+      <div class="ayat-card reveal">
+        <div class="ayat-header">
+          <span class="ayat-badge">QS. Luqman</span>
+          <span class="ayat-ref">Ayat 12–19</span>
+        </div>
+
+        <div class="arabic-text">
+          وَلَقَدْ آتَيْنَا لُقْمَانَ الْحِكْمَةَ أَنِ اشْكُرْ لِلَّهِ
+          ۚ وَمَن يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ ۖ
+          وَمَن كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ حَمِيدٌ
+        </div>
+
+        <p class="translation">
+          <strong>"Dan sungguh, telah Kami berikan hikmah kepada Luqman, yaitu: 'Bersyukurlah kepada Allah. Dan barang siapa bersyukur, maka sesungguhnya dia bersyukur untuk dirinya sendiri; dan barang siapa tidak bersyukur (kufur), maka sesungguhnya Allah Mahakaya, Maha Terpuji.'"</strong>
+        </p>
+      </div>
+
+      <!-- Cards Kanan -->
+      <div class="pembahasan-content">
+        <div class="pembahasan-card reveal">
+          <div class="card-icon">📖</div>
+          <div class="card-title">Latar Belakang Surah Luqman</div>
+          <p class="card-text">Surah Luqman merupakan surah ke-31 dalam Al-Qur'an yang tergolong surah Makkiyyah. Surah ini memuat nasihat-nasihat agung seorang ayah kepada anaknya yang menjadi landasan pendidikan karakter dalam Islam.</p>
+        </div>
+
+        <div class="pembahasan-card reveal">
+          <div class="card-icon">🔍</div>
+          <div class="card-title">Siapakah Luqman Al-Hakim?</div>
+          <p class="card-text">Para ulama tafsir berpendapat bahwa Luqman adalah seorang hamba saleh yang dianugerahi hikmah oleh Allah SWT. Beliau bukan seorang nabi, namun kebijaksanaannya diabadikan dalam Al-Qur'an sebagai teladan pendidikan sepanjang masa.</p>
+        </div>
+
+        <div class="pembahasan-card reveal">
+          <div class="card-icon">🎯</div>
+          <div class="card-title">Relevansi dengan Pendidikan Modern</div>
+          <p class="card-text">Nasihat Luqman dalam ayat 12-19 mencakup dimensi pendidikan teologis, moral, sosial, dan spiritual yang saling berkesinambungan — selaras dengan konsep pendidikan holistik yang dianut dunia pendidikan kontemporer.</p>
+        </div>
+
+        <div class="pembahasan-card reveal">
+          <div class="card-icon">🌟</div>
+          <div class="card-title">Metode Pendidikan Luqman</div>
+          <p class="card-text">Luqman menggunakan pendekatan dialogis penuh kasih sayang, pemberian keteladanan, dan penguatan motivasi intrinsik. Ia berbicara dengan lembut namun tegas, menggunakan ungkapan "Yaa Bunayya" (wahai anakku) sebagai ekspresi kelembutan seorang pendidik.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ NILAI-NILAI ═══════════ -->
+<section id="nilai">
+  <div class="nilai-container">
+    <div class="section-header reveal">
+      <span class="section-label">✦ Inti Ajaran</span>
+      <h2 class="section-title light">Nilai-Nilai Pendidikan</h2>
+      <p class="section-desc light">Tujuh pilar pendidikan karakter yang terkandung dalam nasihat Luqman kepada putranya</p>
+      <div class="gold-line"><span>◆</span></div>
+    </div>
+
+    <div class="nilai-grid">
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">01</div>
+        <div class="nilai-icon">🙏</div>
+        <div class="nilai-title">Syukur kepada Allah</div>
+        <div class="nilai-arabic">الشُّكْرُ لِلَّهِ</div>
+        <span class="nilai-ayat">Ayat 12</span>
+        <p class="nilai-desc">Landasan utama pendidikan karakter dimulai dari rasa syukur. Luqman diperintahkan untuk mengajarkan anaknya agar senantiasa bersyukur kepada Allah atas segala nikmat yang diberikan, karena syukur sejatinya bermanfaat bagi diri sendiri.</p>
+      </div>
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">02</div>
+        <div class="nilai-icon">🚫</div>
+        <div class="nilai-title">Larangan Syirik</div>
+        <div class="nilai-arabic">لَا تُشْرِكْ بِاللَّهِ</div>
+        <span class="nilai-ayat">Ayat 13</span>
+        <p class="nilai-desc">Pesan pertama dan paling fundamental yang disampaikan Luqman: "Janganlah kamu mempersekutukan Allah." Tauhid adalah fondasi utama yang harus ditanamkan sejak dini kepada setiap anak didik.</p>
+      </div>
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">03</div>
+        <div class="nilai-icon">❤️</div>
+        <div class="nilai-title">Birrul Walidain</div>
+        <div class="nilai-arabic">بِالْوَالِدَيْنِ إِحْسَانًا</div>
+        <span class="nilai-ayat">Ayat 14–15</span>
+        <p class="nilai-desc">Nilai berbakti kepada orang tua ditanamkan melalui kisah pengorbanan seorang ibu yang mengandung dengan susah payah. Namun, jika orang tua menyuruh syirik, maka anak tidak wajib menaati, kecuali dalam hal kebaikan.</p>
+      </div>
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">04</div>
+        <div class="nilai-icon">👁️</div>
+        <div class="nilai-title">Kesadaran Muraqabah</div>
+        <div class="nilai-arabic">إِنَّهَا إِن تَكُ مِثْقَالَ حَبَّةٍ</div>
+        <span class="nilai-ayat">Ayat 16</span>
+        <p class="nilai-desc">Luqman mengajarkan bahwa setiap perbuatan sekecil biji sawi pun akan diketahui Allah dan mendapat balasannya. Kesadaran ini membentuk rasa malu berbuat dosa dan mendorong konsistensi dalam kebaikan.</p>
+      </div>
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">05</div>
+        <div class="nilai-icon">📿</div>
+        <div class="nilai-title">Mendirikan Shalat</div>
+        <div class="nilai-arabic">أَقِمِ الصَّلَاةَ</div>
+        <span class="nilai-ayat">Ayat 17</span>
+        <p class="nilai-desc">Shalat sebagai tiang agama ditekankan sebagai kewajiban yang harus ditegakkan. Shalat yang khusyuk membentuk kedisiplinan, ketulusan, dan hubungan vertikal yang kuat antara hamba dengan Tuhannya.</p>
+      </div>
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">06</div>
+        <div class="nilai-icon">📢</div>
+        <div class="nilai-title">Amar Ma'ruf Nahi Munkar</div>
+        <div class="nilai-arabic">وَأْمُرْ بِالْمَعْرُوفِ وَانْهَ عَنِ الْمُنكَرِ</div>
+        <span class="nilai-ayat">Ayat 17</span>
+        <p class="nilai-desc">Nilai sosial: berani mengajak kepada kebaikan dan mencegah kemungkaran. Ini membentuk karakter anak yang peduli lingkungan, berani bersuara untuk kebenaran, dan memiliki jiwa kepemimpinan.</p>
+      </div>
+
+      <div class="nilai-card reveal">
+        <div class="nilai-number">07</div>
+        <div class="nilai-icon">🌿</div>
+        <div class="nilai-title">Akhlak Mulia &amp; Tawadhu</div>
+        <div class="nilai-arabic">وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ</div>
+        <span class="nilai-ayat">Ayat 18–19</span>
+        <p class="nilai-desc">Larangan sombong dan berjalan dengan angkuh. Luqman mengajarkan kesederhanaan dalam berperilaku: berjalan dengan rendah hati dan berbicara dengan suara yang sopan — Allah tidak menyukai orang yang sombong.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ IMPLEMENTASI ═══════════ -->
+<section id="implementasi">
+  <div class="impl-container">
+    <div class="section-header reveal">
+      <span class="section-label">✦ Penerapan Praktis</span>
+      <h2 class="section-title">Implementasi Nilai</h2>
+      <p class="section-desc">Strategi penerapan nilai-nilai Luqman dalam berbagai lingkungan pendidikan</p>
+      <div class="gold-line"><span>◆</span></div>
+    </div>
+
+    <div class="impl-tabs reveal">
+      <button class="impl-tab active" onclick="showTab('keluarga')">🏠 Keluarga</button>
+      <button class="impl-tab" onclick="showTab('sekolah')">🏫 Sekolah</button>
+      <button class="impl-tab" onclick="showTab('masyarakat')">🕌 Masyarakat</button>
+      <button class="impl-tab" onclick="showTab('diri')">🌱 Diri Sendiri</button>
+    </div>
+
+    <div id="tab-keluarga" class="impl-panel active reveal">
+      <div class="impl-panel-grid">
+        <div class="impl-item">
+          <div class="impl-num">1</div>
+          <div class="impl-text"><h4>Pembiasaan Shalat Berjamaah</h4><p>Orang tua mengajak anak shalat berjamaah sejak dini, menjadikan shalat sebagai budaya keluarga yang menyenangkan dan bermakna.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">2</div>
+          <div class="impl-text"><h4>Dialog Islami dalam Keseharian</h4><p>Orang tua menyisipkan nilai tauhid, syukur, dan akhlak dalam percakapan sehari-hari dengan bahasa yang ramah anak.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">3</div>
+          <div class="impl-text"><h4>Keteladanan Orang Tua</h4><p>Nilai terbaik diajarkan melalui teladan nyata — orang tua yang bersyukur, jujur, rendah hati menjadi guru pertama anak.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">4</div>
+          <div class="impl-text"><h4>Bacaan Kisah Inspiratif</h4><p>Membacakan kisah-kisah teladan seperti nasihat Luqman sebelum tidur untuk membentuk imajinasi moral anak.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-sekolah" class="impl-panel reveal">
+      <div class="impl-panel-grid">
+        <div class="impl-item">
+          <div class="impl-num">1</div>
+          <div class="impl-text"><h4>Integrasi dalam Kurikulum PAI</h4><p>Nilai-nilai QS. Luqman diintegrasikan ke dalam mata pelajaran PAI dengan pendekatan tematik dan kontekstual.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">2</div>
+          <div class="impl-text"><h4>Pembiasaan Karakter Harian</h4><p>Program 5S (Senyum, Sapa, Salam, Sopan, Santun) sebagai implementasi akhlak Luqman dalam rutinitas sekolah.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">3</div>
+          <div class="impl-text"><h4>Diskusi &amp; Refleksi Nilai</h4><p>Guru mengadakan diskusi reflektif tentang nilai-nilai Luqman dan penerapannya dalam kehidupan nyata siswa.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">4</div>
+          <div class="impl-text"><h4>Penilaian Karakter Holistik</h4><p>Evaluasi tidak hanya dari sisi kognitif, tetapi juga dari sikap, perilaku, dan penerapan nilai-nilai islami dalam keseharian.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-masyarakat" class="impl-panel reveal">
+      <div class="impl-panel-grid">
+        <div class="impl-item">
+          <div class="impl-num">1</div>
+          <div class="impl-text"><h4>Program Majelis Taklim</h4><p>Mengadakan kajian rutin berbasis nilai Luqman untuk orang tua dan masyarakat sebagai penguatan pendidikan komunitas.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">2</div>
+          <div class="impl-text"><h4>Gerakan Amar Ma'ruf</h4><p>Komunitas bersama-sama mendorong budaya saling mengingatkan dalam kebaikan dan mencegah perilaku menyimpang.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">3</div>
+          <div class="impl-text"><h4>Lingkungan Islami yang Kondusif</h4><p>Menciptakan lingkungan yang mendukung tumbuhnya karakter islami melalui norma sosial positif dan keteladanan tokoh.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">4</div>
+          <div class="impl-text"><h4>Pemanfaatan Media Dakwah</h4><p>Menyebarkan nilai-nilai pendidikan Luqman melalui media sosial, podcast, dan konten digital yang edukatif dan menarik.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-diri" class="impl-panel reveal">
+      <div class="impl-panel-grid">
+        <div class="impl-item">
+          <div class="impl-num">1</div>
+          <div class="impl-text"><h4>Muhasabah Harian</h4><p>Membiasakan refleksi diri setiap malam: sudahkah saya bersyukur, menjaga shalat, dan berakhlak mulia hari ini?</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">2</div>
+          <div class="impl-text"><h4>Jurnal Syukur</h4><p>Menulis minimal tiga hal yang disyukuri setiap hari untuk melatih kesadaran dan rasa terima kasih kepada Allah.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">3</div>
+          <div class="impl-text"><h4>Menjaga Adab Bicara</h4><p>Berlatih untuk berkata-kata dengan volume yang wajar, lemah lembut, dan penuh hikmah — meneladani perintah Luqman ayat 19.</p></div>
+        </div>
+        <div class="impl-item">
+          <div class="impl-num">4</div>
+          <div class="impl-text"><h4>Istiqamah dalam Ibadah</h4><p>Menjaga konsistensi shalat, membaca Al-Qur'an, dan berdzikir sebagai wujud kesadaran muraqabah kepada Allah.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ KESIMPULAN ═══════════ -->
+<section id="kesimpulan">
+  <div class="kesimpulan-container">
+    <div class="section-header reveal">
+      <span class="section-label">✦ Penutup</span>
+      <h2 class="section-title">Kesimpulan</h2>
+      <p class="section-desc">Sintesis nilai-nilai Luqman sebagai sistem pendidikan karakter yang komprehensif</p>
+      <div class="gold-line"><span>◆</span></div>
+    </div>
+
+    <div class="quote-block reveal">
+      <div class="quote-text">يَا بُنَيَّ إِنَّهَا إِن تَكُ مِثْقَالَ حَبَّةٍ مِّنْ خَرْدَلٍ فَتَكُن فِي صَخْرَةٍ أَوْ فِي السَّمَاوَاتِ أَوْ فِي الْأَرْضِ يَأْتِ بِهَا اللَّهُ</div>
+      <div class="quote-source">QS. Luqman [31] : 16 — Nasihat Luqman kepada Putranya</div>
+    </div>
+
+    <div class="kesimpulan-points">
+      <div class="point-item reveal">
+        <div class="point-dot">1</div>
+        <p class="point-text"><strong>Sistem Pendidikan Holistik:</strong> Nasihat Luqman dalam QS. 31:12-19 membentuk sistem pendidikan karakter yang mencakup dimensi spiritual (tauhid, syukur, shalat), moral (akhlak, tawadhu), dan sosial (birrul walidain, amar ma'ruf nahi munkar) secara terintegrasi.</p>
+      </div>
+      <div class="point-item reveal">
+        <div class="point-dot">2</div>
+        <p class="point-text"><strong>Tauhid sebagai Fondasi Utama:</strong> Pembentukan karakter tidak dapat dipisahkan dari keyakinan tauhid yang kokoh. Seluruh nilai pendidikan Luqman berpusat pada kesadaran akan kebesaran dan pengawasan Allah SWT.</p>
+      </div>
+      <div class="point-item reveal">
+        <div class="point-dot">3</div>
+        <p class="point-text"><strong>Pendekatan Pendidikan yang Manusiawi:</strong> Luqman menggunakan metode kasih sayang, dialog, dan keteladanan — bukan paksaan — yang terbukti efektif dalam membentuk karakter anak yang kuat secara internal.</p>
+      </div>
+      <div class="point-item reveal">
+        <div class="point-dot">4</div>
+        <p class="point-text"><strong>Relevansi Sepanjang Zaman:</strong> Nilai-nilai Luqman bersifat universal dan abadi. Dalam era modern pun, krisis karakter yang dihadapi generasi muda dapat diatasi dengan kembali kepada landasan pendidikan Al-Qur'an ini.</p>
+      </div>
+      <div class="point-item reveal">
+        <div class="point-dot">5</div>
+        <p class="point-text"><strong>Tanggung Jawab Bersama:</strong> Implementasi nilai Luqman adalah tanggung jawab kolektif — keluarga, sekolah, dan masyarakat harus bersinergi untuk menciptakan lingkungan yang mendukung pembentukan karakter anak didik yang beriman dan berakhlak mulia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>QS. Luqman 31:12-19</h3>
+      <p>Kajian mendalam tentang nilai-nilai pendidikan Islam yang terkandung dalam nasihat Luqman Al-Hakim kepada putranya sebagai landasan pembentukan karakter anak didik.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#pembahasan">Pembahasan</a></li>
+        <li><a href="#nilai">Nilai-Nilai</a></li>
+        <li><a href="#implementasi">Implementasi</a></li>
+        <li><a href="#kesimpulan">Kesimpulan</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Referensi</h4>
+      <ul>
+        <li><a href="#">Al-Qur'an QS. Luqman: 12-19</a></li>
+        <li><a href="#">Tafsir Ibnu Katsir</a></li>
+        <li><a href="#">Tafsir Al-Misbah</a></li>
+        <li><a href="#">Tafsir Al-Azhar</a></li>
+        <li><a href="#">Pendidikan Karakter Islam</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Kajian Tarbawi QS. Luqman · Nilai Pendidikan Islam</p>
+    <div class="footer-arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+  </div>
+</footer>
+
+<script>
+  // Progress Bar
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('progress-bar').style.width = scrolled + '%';
+  });
+
+  // Nav Toggle
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // Close nav on link click (mobile)
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  // Scroll Reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Tab System
+  function showTab(id) {
+    document.querySelectorAll('.impl-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.impl-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Navbar active link highlight
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 80) current = sec.getAttribute('id');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--gold-light)'
+        : 'rgba(255,255,255,0.75)';
+    });
+  });
+</script>
+</body>
+</html>
